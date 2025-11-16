@@ -1,12 +1,13 @@
 #include<iostream>
 
 int generisiBroj() {
-	return std::rand() % 501 + 100;
+	// Thanks Iris
+	return std::rand() % 401 + 100;
 }
 
 bool daLiBrojSadrziCifru6(int broj) {
 	while (broj != 0) {
-		const int zadnjaCifra = broj % 10;
+		int zadnjaCifra = broj % 10;
 
 		if (zadnjaCifra == 6) {
 			return true;
